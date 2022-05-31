@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: center; 
 }
 
 .App-logo {
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* App style */
+
+section{
+  display: grid;
+}
+.card{
+  background-color: rgb(16, 154, 209);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px #000;
+}
+.btn{
+  background-color: rgb(43, 12, 214);
+  color:#fff;
+  border:none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+.btn:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+input{
+  width: 20rem;
+  margin: 5px;
+  padding: 5px;
+}
+form{
+  background-color: #ddd;
+  padding: 20px; 
+}
+
+@media screen and (min-width: 600px) {
+    section{
+      grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 760px) {
+    section{
+      grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    section{
+      grid-template-columns: auto auto auto auto;
+    }
 }
